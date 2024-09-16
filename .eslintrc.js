@@ -23,6 +23,13 @@ module.exports = {
 		'plugin:eslint-comments/recommended',
 	],
 	rules: {
+		'prettier/prettier': [
+			'warn',
+			{
+				endOfLine: 'lf', // Установка перевода строк на LF в ESLint
+				usePrettierrc: true,
+			},
+		],
 		semi: [2, 'always'],
 		quotes: [2, 'single', { avoidEscape: true }],
 		'no-unused-vars': 'off',
